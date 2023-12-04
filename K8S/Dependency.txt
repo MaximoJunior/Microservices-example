@@ -1,0 +1,5 @@
+# To configure API Gateway using NGINX
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+
+# To create a secret password for MSSQL
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55W0rd!"
